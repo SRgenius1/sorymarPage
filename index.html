@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/main.css">
+    <script src="https://kit.fontawesome.com/3ef9a7cfc0.js" crossorigin="anonymous"></script>
+    <link href="http://fonts.cdnfonts.com/css/parisienne" rel="stylesheet">
     <title>Sol y mar | Estilo y elegancia</title>
 </head>
 <body>
     <!-- !SECCION HEADER -->
     <header class="header">
         <nav class="header-nav">
-            <p>Sol y mar, Estilo y elegancia</p>
+            <button id="open-button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <p>Sol y mar</p>
             <img class="nav-img" width="50px" height="50px" src="./img/WhatsApp Image 2022-07-25 at 7.42.45 PM.jpeg" alt="">
-            <button>Open</button>
         </nav>
-        <h1>Sol y Mar</h1>
+        <h2>Estilo y elegancia</h2>
     </header>
     <!-- !MENU DESPLEGABLE -->
-    <aside class="aside-menu">
-        <button>Close</button>
+    <aside class="aside-menu inactive">
+        <button id="close-button">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
         <ul>
             <li>Contacto</li>
             <li>Servicios</li>
@@ -50,5 +56,6 @@
             <li></li>
         </ul>
     </footer>
+    <script src="./src/index.js"></script>
 </body>
 </html>
