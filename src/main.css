@@ -1,0 +1,12 @@
+/* !NORMALIZE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* !VARIABLES DE COLORES */
+:root {
+    --brand-color: #e0d4b3; 
+    --black-color: #000;
+    --white--color: #fff;
+}
