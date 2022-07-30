@@ -50,9 +50,10 @@ button {
 .header h2 {
     font-size: 1.8rem;
     padding: 7px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--devil-gray-color);
     text-align: center;
     font-family: 'Parisienne', sans-serif;
-    border-bottom: 1px solid var(--devil-gray-color);
     color: rgb(165, 165, 165);
 }
 
@@ -84,14 +85,145 @@ button {
 
 /* !MENU DESPLEGABLE*/
 .aside-menu {
-    background-color: var(--white--color);
+    height: 100%;
     width: 70%;
-    position: absolute;
     top: 0px;
+    background-color: var(--white--color);
+    position: absolute;
+}
+
+.aside-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .aside-menu ul li {
-    margin-top: 20px;
-    height: 100%;
+    margin-bottom: 50px;
     border-bottom: 1px solid var(--devil-gray-color);
+}
+
+.aside-menu ul li a{
+    font-size: 2rem;
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: var(--black-color);
+}
+
+.aside-menu ul li:nth-child(1) {
+    margin-top: 100px;
+}
+
+#close-button {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* !CONTENIDO PRINCIPAL*/
+main {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+/* ?IMAGEN CON TEXTO (PRIMERA SECCION)*/
+.section-img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-img-background {
+    width: 100%;
+    height: 250px;
+    background-image: url('../img/c-kana-renta-de-vestidos-xv.jpg');
+    background-repeat: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.section-img-background h2 {
+    width: 130px;
+    margin-left: 10px;
+    padding-top: 80px;
+    font-size: 1.6rem;
+    color: var(--white--color);
+    font-family: 'Parisienne', sans-serif;
+}
+
+/* ?NUESTROS SERVICIOS MUJERES (SEGUNDA SECCION)*/
+.wowmen-section {
+    width: 100%;
+    height: 374px;
+}
+
+.wowmen-section h2 {
+    margin-bottom: 10px;
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: 'The Moon', sans-serif;
+    border-bottom: 1px solid var(--devil-gray-color);
+}
+
+.wowmen-container {
+    width: 100%;
+    display: flex;
+}
+
+.wowmen-container-card {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wowmen-container-card img {
+    width: 95%;
+    height: 100px;
+}
+
+.wowmen-container-card p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ?NUESTROS SERVICIOS HOMBRES (SEGUNDA SECCION)*/
+.mens-section {
+    width: 100%;
+    height: 374px;
+}
+
+.mens-section h2 {
+    margin-bottom: 10px;
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: 'The Moon', sans-serif;
+    border-bottom: 1px solid var(--devil-gray-color);
+}
+
+.mens-container {
+    width: 100%;
+    display: flex;
+}
+
+.mens-container-card {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mens-container-card img {
+    width: 95%;
+    height: 100px;
+}
+
+.mens-container-card p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
